@@ -71,14 +71,24 @@ public class TelaApp extends AppCompatActivity {
 
         // Verificar se é o FragmentViagens E se a view já foi criada
         if (fragmentAtual instanceof FragmentViagens && fragmentAtual.getView() != null) {
-            FragmentViagens meuFragment = (FragmentViagens) fragmentAtual;
+            FragmentViagens fragmentRegistrarViagem = (FragmentViagens) fragmentAtual;
             // Configurar o clique do botão
-            meuFragment.configurarBotao(new View.OnClickListener() {
+            fragmentRegistrarViagem.configurarBotao1(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mudarFragmento(new FragmentRegistrarViagem());
                 }
             });
+
+            FragmentViagens fragmentDadosViagem = (FragmentViagens) fragmentAtual;
+            fragmentDadosViagem.configurarBotao2(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mudarFragmento(new FragmentDadosDaViagem());
+                }
+            });
+
+
         } else {
             // Se não estiver pronto, tentar novamente depois
             new Handler(Looper.getMainLooper()).postDelayed(() -> {

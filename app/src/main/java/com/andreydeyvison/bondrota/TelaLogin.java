@@ -72,6 +72,7 @@ public class TelaLogin extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(TelaLogin.this, TelaApp.class);
                 startActivity(intent);
+                finish();
             }
         });
 

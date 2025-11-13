@@ -92,6 +92,7 @@
                 android:textStyle="bold"/>
 
             <ImageView
+                android:id="@+id/statusDia1"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center"
@@ -101,6 +102,7 @@
                 />
 
             <TextView
+                android:id="@+id/quantAlunosDia1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0/46"
@@ -137,6 +139,7 @@
                 android:textStyle="bold"/>
 
             <ImageView
+                android:id="@+id/statusDia2"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center"
@@ -146,6 +149,7 @@
                 />
 
             <TextView
+                android:id="@+id/quantAlunosDia2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0/46"
@@ -182,6 +186,7 @@
                 android:textStyle="bold"/>
 
             <ImageView
+                android:id="@+id/statusDia3"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center"
@@ -191,6 +196,7 @@
                 />
 
             <TextView
+                android:id="@+id/quantAlunosDia3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0/46"
@@ -227,6 +233,7 @@
                 android:textStyle="bold"/>
 
             <ImageView
+                android:id="@+id/statusDia4"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center"
@@ -236,6 +243,7 @@
                 />
 
             <TextView
+                android:id="@+id/quantAlunosDia4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0/46"
@@ -272,6 +280,7 @@
                 android:textStyle="bold"/>
 
             <ImageView
+                android:id="@+id/statusDia5"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center"
@@ -281,6 +290,7 @@
                 />
 
             <TextView
+                android:id="@+id/quantAlunosDia5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0/46"

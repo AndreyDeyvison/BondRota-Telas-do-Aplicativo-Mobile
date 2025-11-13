@@ -7,14 +7,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FragmentViagens#newInstance} factory method to
+ * Use the {@link FragmentDadosDaViagem#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentViagens extends Fragment {
+public class FragmentDadosDaViagem extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,11 +24,7 @@ public class FragmentViagens extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    LinearLayout dia1;
-    LinearLayout dia2;
-    String status;
-
-    public FragmentViagens() {
+    public FragmentDadosDaViagem() {
         // Required empty public constructor
     }
 
@@ -39,11 +34,11 @@ public class FragmentViagens extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentViagens.
+     * @return A new instance of fragment FragmentDadosDaViagem.
      */
     // TODO: Rename and change types and number of parameters
-    public static FragmentViagens newInstance(String param1, String param2) {
-        FragmentViagens fragment = new FragmentViagens();
+    public static FragmentDadosDaViagem newInstance(String param1, String param2) {
+        FragmentDadosDaViagem fragment = new FragmentDadosDaViagem();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,32 +59,6 @@ public class FragmentViagens extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_viagens, container, false);
-
-        // THEN find views using the inflated view
-        dia1 = view.findViewById(R.id.dia1);
-
-        inicializarComponentes(view);
-
-        dia2 = view.findViewById(R.id.dia2);
-
-        return view;
-    }
-
-    public void configurarBotao1(View.OnClickListener listener) {
-        if (dia1 != null) {
-            dia1.setOnClickListener(listener);
-        }
-    }
-
-    public void configurarBotao2(View.OnClickListener listener) {
-        if (dia2 != null) {
-            dia2.setOnClickListener(listener);
-        }
-    }
-
-    private void inicializarComponentes(View view) {
-
-
+        return inflater.inflate(R.layout.fragment_dados_da_viagem, container, false);
     }
 }
