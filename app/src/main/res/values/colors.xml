@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="azulPrincipal">#90A4FC</color>
+    <color name="azulEscuro">#2C324E</color>
+    <color name="azulEscuroClaro">#9699A7</color>
+    <color name="cinzaTexto">#666666</color>
+</resources>

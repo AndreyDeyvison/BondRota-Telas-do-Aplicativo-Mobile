@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaLogin"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:backgroundTint="@color/azulPrincipal"
+    >
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linhaGuiaParaParteLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linhaGuiaParaNuvem"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".485"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/nuvem_pequena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/nuvem_pequena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nuvemAzulClaro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="50dp"
+        android:scaleX="-1"
+        android:src="@drawable/nuvem_azul_claro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linhaGuiaParaNuvem" />
+
+    <ImageView
+        android:id="@+id/nuvemAzulEscuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-125dp"
+        android:src="@drawable/nuvem_azul_escuro"
+        app:layout_constraintBottom_toTopOf="@+id/linhaGuiaParaNuvem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <ImageView
+        android:id="@+id/nuvemBranca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:src="@drawable/nuvem_branca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linhaGuiaParaNuvem"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/nuvem_pequena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/onibus"
+        android:layout_width="130dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/onibus"
+        app:layout_constraintBottom_toTopOf="@id/layoutTelaLogin"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutTelaLogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_tela_login"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linhaGuiaParaParteLogin"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textoNomeDoApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/capriola"
+            android:text="@string/app_name"
+            android:textColor="@color/azulEscuro"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextUsuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextUsuario"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroud_edittext"
+            android:fontFamily="@font/capriola"
+            android:hint="Usuário"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#2C324E"
+            android:textColorHint="#802C324E"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextSenha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/editTextSenha"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroud_edittext"
+            android:fontFamily="@font/capriola"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#2C324E"
+            android:textColorHint="#802C324E"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/botaoLogin"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_botao_login"
+            android:fontFamily="@font/capriola"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSenha">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="101dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/logo_bondrota"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tela_branca"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
